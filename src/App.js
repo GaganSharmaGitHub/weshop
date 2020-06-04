@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import {FirebaseContext} from './firebase'
+import AfterLogin from './screens/AfterLogin'
 import './App.css';
 import SignUpLogin from './screens/SignUpLogiIn'
 function App() {
@@ -12,9 +13,7 @@ function App() {
       if(user==null){
       return <SignUpLogin></SignUpLogin>
       }else{
-        return <div>
-        <button onClick={firebase.signUserOut}>SignOut</button>
-        </div>
+        return<AfterLogin></AfterLogin>
       }
       }
 

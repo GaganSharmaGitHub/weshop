@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #f12711;
+    width: 50px;
+        height: 100vh;
+        text-align: center;
+    position: fixed;
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+
+        a{
+            font-size: 30px;
+            color: rgba(255, 255, 255, 0.671);
+            
+        }
+        a.active{
+            color: #fff;
+        }
+    }
+}
