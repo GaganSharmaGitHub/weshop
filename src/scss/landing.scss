@@ -1,0 +1,54 @@
+.landing,.formContainer{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    .landingInner,form{
+        background-color: rgb(255, 255, 255);
+        max-width: 500px;
+        text-align: center;
+        padding: 10px;
+        padding-top: 50px;
+        border-radius: 15px;
+        position: relative;
+        width: 80vw;
+        label{
+            display: block;
+            text-transform: capitalize;
+        }
+        a{
+            display: block;
+            color: #f12711;
+        }
+        input{
+            font-size: larger;
+            max-width: 100%;
+        }
+        img{
+            position: absolute;
+            width: 100px;
+            border: 6px solid black;
+            border-radius: 50%;
+            left: 50%;
+            transform: translate(-50%,-120px);
+            background-color: #fff;
+        }
+        button{
+            padding: 10px;
+            font-size: large;
+            width: 90%;
+            border-radius: 10px;
+            border: #fff solid 2px;
+            cursor: pointer;
+            background-color: #f12711;
+            color: #fff;
+        }
+    }
+
+}

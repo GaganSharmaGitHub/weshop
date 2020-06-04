@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
+import {FirebaseContext} from './firebase'
 import './App.css';
-
+import SignUpLogin from './screens/SignUpLogiIn'
 function App() {
+  const [user, setuser] = useState(null)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <FirebaseContext.Consumer>
+    {firebase=>{
+      firebase.auth.onAuthStateChanged(setuser);
+      console.log(user)
+      if(user==null){
+      return <SignUpLogin></SignUpLogin>
+      }else{
+        return <div>
+        <button onClick={firebase.signUserOut}>SignOut</button>
+        </div>
+      }
+      }
+
+}
+</FirebaseContext.Consumer>
+)
 }
 
 export default App;
