@@ -4,8 +4,8 @@ React based shopping webapp
 ![Landing](./screenshot/landing.PNG)
 ![Login Screen](./screenshot/signup.PNG)
 #### Search and browse through fashion
-![Home](./screenshot/)
-![Search](./screenshot/)
+![Home](./screenshot/home.PNG)
+![Search](./screenshot/search.PNG)
 
 #### Buy fashion
 ![Product](./screenshot/product.PNG)
