@@ -1,0 +1,37 @@
+.productPage{
+    background-color: rgb(194, 194, 194);
+    margin: 0px;
+    height: 100%;
+    padding: 20px;
+    .productinfo{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+        .text{
+            padding: 10px;
+            min-width:200px ;
+            .previous{
+                text-decoration: line-through;
+                color: rgb(146, 1, 1);
+            }
+            button{
+                background-color: #f12711;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                font-size: larger;
+                border-radius: 20px;
+                outline: none;
+                transition: 0.1s;
+                cursor: pointer;
+                &:hover{
+                transform: scale(1.1,1.1);
+                }
+            }
+        }
+    .caruosel{
+        width:200px;
+    }
+
+}
+}

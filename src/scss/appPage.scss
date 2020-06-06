@@ -1,5 +1,8 @@
 .appPage{
     margin-left: 50px;
+    height: 100%;
+    background-color: rgb(194, 194, 194);
+
 }
 .searchBar{
     font-size: 10px;
@@ -34,4 +37,72 @@
         outline: none;
 
     }
+}
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div.card{
+        width: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+        background-color: #fff;
+        display: flex;
+        overflow: hidden;
+        transition: 0.05s ease-in-out;
+        border-radius: 10px;
+        flex-direction: column;
+        height: 100%;
+        &:hover{
+        box-shadow: 0 4px 8px 0 #f12711, 0 6px 20px 0 #f12711;
+            transform: translateY(-10px);
+        }
+        a{
+            flex: 1;
+            color: black;
+            text-decoration: none;
+        }
+        img{
+            width: 200px;
+        }
+        p{
+            flex: 1;
+            padding: 5px;
+            text-align: left;
+            h4{
+                font-size: smaller;
+            }
+        }
+        button{
+            width: 100%;
+            background-color: #f12711;
+            color: #fff;
+            font-size: larger;
+            transition: 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 5px;
+            &:hover{
+                color: #f12711;
+                background-color: #fff;
+                
+            }
+            &:active{
+            background-color: #fd7b3f;
+            color: #ffff;
+
+            }
+        }
+    }
+    div.filler{
+        flex: 1;
+        min-height: 200px;
+        height: 10px;
+    }
+}
+.noResults{
+    text-align: center;
 }

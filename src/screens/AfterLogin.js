@@ -1,4 +1,5 @@
 import React from 'react'
+import Product from './Product'
 import '../scss/appPage.scss'
 import NavBar from '../components/NavBar'
 import Home from './Home'
@@ -19,7 +20,7 @@ export default function AfterLogin() {
         <Switch>
         <Route path='/cart' component={Cart}></Route>
         <Route path='/orders' component={Orders}></Route>
-        <Route path='/' component={Home}></Route>
+        <Route path='/product/:id' component={Product}></Route>
         <Route path='/' component={Home}></Route>
         </Switch>
         </div>
